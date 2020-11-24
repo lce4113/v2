@@ -1,0 +1,2 @@
+#grid{flex-direction:column}#grid,.row{width:100vw;display:flex;align-items:stretch}.row{flex-grow:1}.cell{width:1vw;height:1vw}.alive-cell{background:#4bc8ff}.dead-cell{background:rgba(0,0,0,.1)}*{margin:0;padding:0;box-sizing:border-box}
+/*# sourceMappingURL=main.174936e5.chunk.css.map */
