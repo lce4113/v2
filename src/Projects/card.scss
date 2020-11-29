@@ -1,0 +1,30 @@
+.proj-card {
+  $size: 100px;
+
+  position: relative;
+  width: $size;
+  height: $size;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+  // Background Image
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.9);
+  }
+
+  // Title Text
+  .title {
+    font-size: 20px;
+    z-index: 1;
+  }
+
+  // Description Text
+  .desc {
+    font-size: 10px;
+    z-index: 1;
+  }
+}

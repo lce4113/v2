@@ -1,0 +1,18 @@
+:root {
+  --length: 100;
+}
+
+#grid {
+  display: flex;
+  flex-direction: column;
+  .row {
+    display: flex;
+  }
+  .cell {
+    width: calc(100vw / var(--length));
+    height: calc(100vw / var(--length));
+  }
+  .alive {
+    background: rgb(75, 200, 255);
+  }
+}

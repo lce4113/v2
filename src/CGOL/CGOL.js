@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import omurl from './om.txt';
-import './CGOL.css';
+import './CGOL.scss';
 
 class Grid extends Component {
 
   constructor(props) {
     super(props);
+    setTimeout(() => this.update(), 1250);
     this.length = Number(props.length);
     document.documentElement.style.setProperty('--length', this.length);
     this.cellsize = window.innerWidth / this.length;
@@ -70,7 +71,6 @@ class Grid extends Component {
       return row.map((cell, j) => om[h][j - l] || false);
     });
     this.setState({ grid });
-    setTimeout(() => this.update(), 1250);
   }
 
   render() {
@@ -88,7 +88,7 @@ class Grid extends Component {
 function Cell(props) {
   return (
     <div className={"cell " +
-      (props.alive ? "alive-cell" : "")}></div>
+      (props.alive ? "alive" : "")}></div>
   );
 }
 
