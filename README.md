@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# omahesh.github.io (omahesh.tk)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Dependencies
 
-## Available Scripts
+[Create React App](https://create-react-app.dev/)  
+[gh-pages](https://www.npmjs.com/package/gh-pages)  
+[Tailwind CSS](https://tailwindcss.com/)  
+[Sass](https://sass-lang.com/)
 
-In the project directory, you can run:
+## File Structure
+This website was built with create-react-app so most of the file structure is taken from there.  
+Maintaining this README section is difficult so this will probably be ouasdft of date...
 
-### `npm start`
+### `public` 
+For HTML files and files used directly by the HTML files
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`index.html` - The main HTML page  
+`404.html` - Used for when a URL is typed incorrectly  
+`arrow.svg` - The down arrow on the first slide  
+`favicon.svg` - The favicon (changes a lot)  
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `src` 
+For Javascript and (S)CSS files (and files that they use)
 
-### `npm test`
+`index.js` - The entry point for Javascript  
+`main.scss` - Main SCSS script with things like `margin: 0` and `box-sizing: border-box`  
+`title.scss` - SCSS for front slide  
+#### `CGOL` 
+Javascript and SCSS for Conway's Game of Life on the front page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`CGOL.js` - Contains Grid and Cell react components  
+`CGOL.scss` - SCSS for Grid and Cells  
+`om.txt` - A .txt file for the name Om Mahesh drawn in 1s and 0s
 
-### `npm run build`
+#### `Projects` 
+Handles projects and project cards
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`projects.js` - The main entry point for projects  
+`projects.scss` - The main SCSS file for projects  
+`card.scss` - SCSS for a project card
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Build
+Contains compressed files that are ready for production (contents are the same as the `gh-pages` branch)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Misc Files
+Files used for configuration, metadata, etc.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`README.md` - The markdown file you are reading right now  
+`node_modules` - Contains npm packages (it's very big)
+`package.json` - Metadata about the repo (version, dependencies, etc.)  
+`package-lock.json` - Dependency tree or something  
+`gh-pages.js` - A script to publish to the `gh-pages` branch using the `gh-pages` package  
+`tailwind.config.js` - Configuration for [Tailwind CSS](https://tailwindcss.com/)  
+`craco.config.js` - Configuration for [CRACO (Create React App Configuration Override)](https://www.npmjs.com/package/@craco/craco)
