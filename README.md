@@ -1,15 +1,17 @@
 # omahesh.github.io (omahesh.tk)
 
-## Dependencies
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ed23a536-913d-47b6-ba02-37fd8974ee79/deploy-status)](https://app.netlify.com/sites/ommahesh/deploys)
+## Things Used
 
 [Create React App](https://create-react-app.dev/)  
-[gh-pages](https://www.npmjs.com/package/gh-pages)  
+[Netlify](https://netlify.com)  
 [Tailwind CSS](https://tailwindcss.com/)  
-[Sass](https://sass-lang.com/)
+[Sass](https://sass-lang.com/)  
+[gh-pages](https://www.npmjs.com/package/gh-pages)
 
 ## File Structure
 This website was built with create-react-app so most of the file structure is taken from there.  
-Maintaining this README section is difficult so this will probably be ouasdft of date...
+Maintaining this README section is difficult so this will probably be out of date (unless I develop some kind of amazing automation to do this for me).
 
 ### `public` 
 For HTML files and files used directly by the HTML files
